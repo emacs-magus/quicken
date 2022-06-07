@@ -14,3 +14,23 @@
 
 ~ /Because it’s a long message, of course ... in fact it’s an interactive message; an entire semantic-context signal-set with attached mind-state abstract capable of replying to your questions, and if you listened to the whole thing in real time you’d still be sitting there with a vacant expression on your face by the time your jovial hosts got to the hunt-the-waiter course.  And/ I did /say it was urgent./
 #+end_quote
+
+* About
+Quicken provides various "hacks" to speed up Emacs initialization.
+
+Quicken does not deal with deferring package loading.  See [[https://github.com/emacs-magus/once][once.el]] for that.
+
+* Warning
+#+begin_quote
+~ /Excuse me/, said the suit. ~ /I think Byr Genar-Hofoen may want to
+think twice before glanding a drug as strong as quicken in the present circumstances.  He is my responsibility when he’s out of your immediate locality, after all, Scopell-Afranqui.  I mean, be fair.  It’s all very well you sitting up there--/
+
+~ /Keep out of this, you vacuous membrane/, the module told the suit.
+
+~ /What?  How dare you!/
+#+end_quote
+
+When I say "hacks," this refers to these facts:
+
+- quicken.el - Can temporarily increase =gc-cons-threshold= and unset =file-name-handler-alist= during Emacs initialization to speed things up.  Generally, you should be very careful messing with these variables.  At the time of implementation, Doom clobbers any customization that happens to =file-name-handler-alist= during initialization.  Quicken will instead merge the initial and new values to prevent this issue.
+- quicken-tangle.el - Provides an alternate tangling function for literate org configs that does not depend on org.  The caveat is that it supports a limited subset of org's tangling functionality.  You can of course tangle /before/ initialization, but quicken provides both: asynchronously tangle when there are changes to your init file or retangle at startup if the org file is newer than the tangled one.
