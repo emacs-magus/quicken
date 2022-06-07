@@ -1,0 +1,16 @@
+#+TITLE: Quicken User Manual
+#+AUTHOR: Fox Kiester
+#+LANGUAGE: en
+#+TEXINFO_DIR_CATEGORY: Emacs
+#+TEXINFO_DIR_TITLE: Quicken: (quicken).
+#+TEXINFO_DIR_DESC: Speed up Emacs initialization
+
+# NOTE: If you are viewing this in org-mode, it is recommended that you install and enable [[https://github.com/snosov1/toc-org][toc-org]], so that all internal links open correctly
+
+#+begin_quote
+~ ... /Look, do you want this message or not?/
+
+~ All right, but why do I have to gland /quicken/?
+
+~ /Because it’s a long message, of course ... in fact it’s an interactive message; an entire semantic-context signal-set with attached mind-state abstract capable of replying to your questions, and if you listened to the whole thing in real time you’d still be sitting there with a vacant expression on your face by the time your jovial hosts got to the hunt-the-waiter course.  And/ I did /say it was urgent./
+#+end_quote
